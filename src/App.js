@@ -1,23 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import ClassProps from './PropsApp/ClassProps';
+import FuncProp from './PropsApp/FunctionalProps';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <ClassProps name="Rupesh Mathur" city="Delhi"><p>I am from Child</p> </ClassProps>
+     <ClassProps name="Siddharth Mathur" city="Jaipur"><button>Click Me</button></ClassProps>
+     <FuncProp name="Shaifali Mathur" city="VDN"></FuncProp>
     </div>
   );
 }
